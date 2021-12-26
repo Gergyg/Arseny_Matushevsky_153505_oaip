@@ -7,5 +7,6 @@ unsigned long long solve(unsigned long long x, unsigned long long y, unsigned lo
 TEST(TestCaseName, TestName) {
   EXPECT_EQ(solve(1234,1234, 10000),736);
   EXPECT_EQ(solve(888, 888, 100000000), 91255296);
+  EXPECT_EQ(solve(999999999999999999 % 10000, 999999999999999999, 10000), 9999);
   EXPECT_TRUE(true);
 }

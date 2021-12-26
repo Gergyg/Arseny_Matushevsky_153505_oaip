@@ -6,12 +6,14 @@ long long f(long long n);
 int main()
 {
     long long n;
-    do {
-        n = check_in();
-        if (n <= 0 || n > 1000000000)
-            std::cout << "Некорректный ввод, повторите попытку:\n";
-    } while (n <= 0 || n > 1000000000);
-    solve(n);
+    while (true) {
+        do {
+            n = check_in();
+            if (n <= 0 || n > 1000000000)
+                std::cout << "Некорректный ввод, повторите попытку:\n";
+        } while (n <= 0 || n > 1000000000);
+        solve(n);
+    }
 }
 
 
